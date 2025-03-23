@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EditKaro - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+        <div class="header-container">
+            <a href="#home" class="header-logo">
+                <img src="editkaro-logo.png" alt="EditKaro Logo" class="logo-img">
+            </a>
+            <nav class="header-nav">
+                <a href="#home">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <i class="fas fa-video fa-spin"></i>
+            <p>Loading EditKaro...</p>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section class="home-section" id="home">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <h1 class="section-title" data-aos="fade-down">Welcome to EditKaro</h1>
+            <p class="section-subtitle" data-aos="fade-up">Transforming Ideas into Visual Masterpieces</p>
+            <a href="#portfolio" class="cta-button" data-aos="fade-up" data-aos-delay="200">Explore Our Work</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <h1 class="section-title" data-aos="fade-down">EditKaro Portfolio</h1>
+            <p class="section-subtitle" data-aos="fade-up">Transforming Ideas into Visual Masterpieces</p>
+            <!-- Filter Bar -->
+            <div class="filter-bar" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-btn active" data-filter="all">All <span class="category-count">9</span></button>
+                <button class="filter-btn" data-filter="motion-graphics">Motion Graphics <span class="category-count">1</span></button>
+                <button class="filter-btn" data-filter="corporate">Corporate Videos <span class="category-count">1</span></button>
+                <button class="filter-btn" data-filter="music-video">Music Videos <span class="category-count">1</span></button>
+                <button class="filter-btn" data-filter="education">Educational Content <span class="category-count">1</span></button>
+                <button class="filter-btn" data-filter="promo">Promo Videos <span class="category-count">1</span></button>
+                <button class="filter-btn" data-filter="vfx">VFX Projects <span class="category-count">1</span></button>
+                <button class="filter-btn" data-filter="animation">2D Animation <span class="category-count">1</span></button>
+                <button class="filter-btn" data-filter="event">Event Highlights <span class="category-count">1</span></button>
+                <button class="filter-btn" data-filter="social-media">Social Media Clips <span class="category-count">1</span></button>
+            </div>
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Motion Graphics -->
+                <div class="portfolio-card" data-category="motion-graphics" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.5" data-aos="fade-up">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/221027/pexels-photo-221027.jpeg?auto=compress&cs=tinysrgb&w=400&h=225&dpr=1" alt="Motion Graphics" onerror="this.src='https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg?auto=compress&cs=tinysrgb&w=400&h=225&dpr=1'; console.log('Failed to load Motion Graphics image');">
+                        <div class="gradient-overlay"></div>
+                        <div class="card-category-badge">
+                            <i class="fas fa-film"></i> Motion Graphics
+                        </div>
+                        <div class="play-icon"><i class="fas fa-play"></i></div>
+                        <div class="card-overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Dynamic Motion Intro</h3>
+                        <p class="card-description">A stunning motion graphics intro for a tech brand.</p>
+                    </div>
+                    <div class="video-link" data-video="https://www.youtube.com/embed/5M1ZJPThGko?autoplay=1&mute=1"></div>
+                </div>
+                <!-- Corporate Video -->
+                <div class="portfolio-card" data-category="corporate" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.5" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400&h=225&dpr=1" alt="Corporate Video" onerror="this.src='https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg?auto=compress&cs=tinysrgb&w=400&h=225&dpr=1'; console.log('Failed to load Corporate Video image');">
+                        <div class="gradient-overlay"></div>
+                        <div class="card-category-badge">
+                            <i class="fas fa-film"></i> Corporate Video
+                        </div>
+                        <div class="play-icon"><i class="fas fa-play"></i></div>
+                        <div class="card-overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Corporate Brand Story</h3>
+                        <p class="card-description">A professional video showcasing a company’s journey.</p>
+                    </div>
+                    <div class="video-link" data-video="https://www.youtube.com/embed/0eDaINi0j4Y?autoplay=1&mute=1"></div>
+                </div>
+                <!-- Music Video -->
+                <div class="portfolio-card" data-category="music-video" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.5" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/1540409/pexels-photo-1540409.jpeg?auto=compress&cs=tinysrgb&w=400&h=225&dpr=1" alt="Music Video" onerror="this.src='https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg?auto=compress&cs=tinysrgb&w=400&h=225&dpr=1'; console.log('Failed to load Music Video image');">
+                        <div class="gradient-overlay"></div>
+                        <div class="card-category-badge">
+                            <i class="fas fa-film"></i> Music Video
+                        </div>
+                        <div class="play-icon"><i class="fas fa-play"></i></div>
+                        <div class="card-overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Vibrant Music Video</h3>
+                        <p class="card-description">A colorful edit for an indie artist’s music video.</p>
+                    </div>
+                    <div class="video-link" data-video="https://www.youtube.com/embed/09R8_2nJtjg?autoplay=1&mute=1"></div>
+                </div>
+                <!-- Educational Content -->
+                <div class="portfolio-card" data-category="education" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.5" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=400&h=225&dpr=1" alt="Educational Content" onerror="this.src='https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg?auto=compress&cs=tinysrgb&w=400&h=225&dpr=1'; console.log('Failed to load Educational Content image');">
+                        <div class="gradient-overlay"></div>
+                        <div class="card-category-badge">
+                            <i class="fas fa-film"></i> Educational Content
+                        </div>
+                        <div class="play-icon"><i class="fas fa-play"></i></div>
+                        <div class="card-overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Science Explainer Video</h3>
+                        <p class="card-description">An engaging explainer for a science education platform.</p>
+                    </div>
+                    <div class="video-link" data-video="https://www.youtube.com/embed/8LaN5C9kV5g?autoplay=1&mute=1"></div>
+                </div>
+                <!-- Promo Video -->
+                <div class="portfolio-card" data-category="promo" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.5" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/3861974/pexels-photo-3861974.jpeg?auto=compress&cs=tinysrgb&w=400&h=225&dpr=1" alt="Promo Video" onerror="this.src='https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg?auto=compress&cs=tinysrgb&w=400&h=225&dpr=1'; console.log('Failed to load Promo Video image');">
+                        <div class="gradient-overlay"></div>
+                        <div class="card-category-badge">
+                            <i class="fas fa-film"></i> Promo Video
+                        </div>
+                        <div class="play-icon"><i class="fas fa-play"></i></div>
+                        <div class="card-overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Product Promo Teaser</h3>
+                        <p class="card-description">A high-energy teaser for a new product launch.</p>
+                    </div>
+                    <div class="video-link" data-video="https://www.youtube.com/embed/0K4oymH7NXY?autoplay=1&mute=1"></div>
+                </div>
+                <!-- VFX Project -->
+                <div class="portfolio-card" data-category="vfx" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.5" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/1632790/pexels-photo-1632790.jpeg?auto=compress&cs=tinysrgb&w=400&h=225&dpr=1" alt="VFX Project" onerror="this.src='https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg?auto=compress&cs=tinysrgb&w=400&h=225&dpr=1'; console.log('Failed to load VFX Project image');">
+                        <div class="gradient-overlay"></div>
+                        <div class="card-category-badge">
+                            <i class="fas fa-film"></i> VFX Project
+                        </div>
+                        <div class="play-icon"><i class="fas fa-play"></i></div>
+                        <div class="card-overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Sci-Fi VFX Sequence</h3>
+                        <p class="card-description">A breathtaking VFX sequence for a sci-fi short film.</p>
+                    </div>
+                    <div class="video-link" data-video="https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1&mute=1"></div>
+                </div>
+                <!-- 2D Animation -->
+                <div class="portfolio-card" data-category="animation" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.5" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/208674/pexels-photo-208674.jpeg?auto=compress&cs=tinysrgb&w=400&h=225&dpr=1" alt="2D Animation" onerror="this.src='https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg?auto=compress&cs=tinysrgb&w=400&h=225&dpr=1'; console.log('Failed to load 2D Animation image');">
+                        <div class="gradient-overlay"></div>
+                        <div class="card-category-badge">
+                            <i class="fas fa-film"></i> 2D Animation
+                        </div>
+                        <div class="play-icon"><i class="fas fa-play"></i></div>
+                        <div class="card-overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Animated Brand Story</h3>
+                        <p class="card-description">A 2D animated story for a startup’s branding.</p>
+                    </div>
+                    <div class="video-link" data-video="https://www.youtube.com/embed/2bSk-8C76dc?autoplay=1&mute=1"></div>
+                </div>
+                <!-- Event Highlights -->
+                <div class="portfolio-card" data-category="event" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.5" data-aos="fade-up" data-aos-delay="700">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=400&h=225&dpr=1" alt="Event Highlights" onerror="this.src='https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg?auto=compress&cs=tinysrgb&w=400&h=225&dpr=1'; console.log('Failed to load Event Highlights image');">
+                        <div class="gradient-overlay"></div>
+                        <div class="card-category-badge">
+                            <i class="fas fa-film"></i> Event Highlights
+                        </div>
+                        <div class="play-icon"><i class="fas fa-play"></i></div>
+                        <div class="card-overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Tech Conference Recap</h3>
+                        <p class="card-description">A dynamic recap of a tech conference event.</p>
+                    </div>
+                    <div class="video-link" data-video="https://www.youtube.com/embed/Scxs7L0vhZ4?autoplay=1&mute=1"></div>
+                </div>
+                <!-- Social Media Clips -->
+                <div class="portfolio-card" data-category="social-media" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.5" data-aos="fade-up" data-aos-delay="800">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=400&h=225&dpr=1" alt="Social Media Clips" onerror="this.src='https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg?auto=compress&cs=tinysrgb&w=400&h=225&dpr=1'; console.log('Failed to load Social Media Clips image');">
+                        <div class="gradient-overlay"></div>
+                        <div class="card-category-badge">
+                            <i class="fas fa-film"></i> Social Media Clips
+                        </div>
+                        <div class="play-icon"><i class="fas fa-play"></i></div>
+                        <div class="card-overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Viral TikTok Edit</h3>
+                        <p class="card-description">A fast-paced edit for a viral TikTok campaign.</p>
+                    </div>
+                    <div class="video-link" data-video="https://www.youtube.com/embed/1t1aM7aS7Xw?autoplay=1&mute=1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <h1 class="section-title" data-aos="fade-down">Get in Touch</h1>
+            <p class="section-subtitle" data-aos="fade-up">We’d love to hear from you! Let’s create something amazing together.</p>
+            <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Lightbox for Video Playback -->
+    <div class="lightbox" id="videoLightbox">
+        <div class="lightbox-content">
+            <span class="close-btn" id="closeLightbox">×</span>
+            <div class="video-error" id="videoError" style="display: none; color: #fff; text-align: center; padding: 20px;">
+                <p>Sorry, this video is unavailable. Please try another project.</p>
+            </div>
+            <iframe id="videoFrame" width="100%" height="100%" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+            <div class="video-controls">
+                <button id="playPauseBtn" class="control-btn"><i class="fas fa-pause"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="custom-cursor-follower" id="cursorFollower"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
